@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+$color:#0064e0;
+
+// font familis
+$bangla_Noto :"Noto Sans Bengali", sans-serif;
+$bangla_hind :"Hind Siliguri", sans-serif;
+$bangla_atma :"Atma", system-ui;
+$bangla_galada :"Galada";
+$arEn_Messiri :"El Messiri", sans-serif;
+$arEn_Baloo :"Baloo Bhaijaan 2", sans-serif;
+$arEn_Rubik :"Rubik", sans-serif;
+
+
+.main-wrapper{
+    width: 100%;
+    height: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding: 20px;
+    background: #f7f7f7;
+
+    h1{
+        margin-bottom: 30px;
+        font-size: 1.25rem;
+    }
+    .container{
+        padding: 30px;
+        width: 100%;
+        max-width: 1000px;
+        box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: .1);
+        border-radius: 5px;
+        background: #fff;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        h2{
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+        .left{
+            width: 100%;
+            flex-grow: 1;
+            flex-basis: 250px;
+            max-height: 300px;
+            overflow: hidden;
+            margin-right: 20px;
+        }
+        textarea{
+            padding: 20px;
+            background: #f7f7f7;
+            width: 100%;
+            min-height: 250px;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+            box-shadow:  inset 3px 2px 10px rgba($color: #f1f1f1, $alpha: 0.3);
+        }
+
+        // RIGHT SIDE
+        .right{
+            width: 100%;
+            flex-grow: 1;
+            flex-basis: 250px;
+            margin-left: 20px;
+            .outputResult{
+                box-shadow: inset 0px 0px 5px rgba($color: #bababa, $alpha: 0.35);
+                width: 100%;
+                padding: 20px;
+                border-radius: 10px;
+                min-height: 250px;
+
+                li{
+                    list-style: none;
+                    font-size: 1rem;
+                }
+            }
+           
+        }
+
+
+    }
+}
+
+
+footer{
+    width: 100%;
+    min-height: 20vh;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #f7f7f7;
+
+    .container{
+        width: 100%;
+        max-width: 580px;
+        padding: 20px;
+        box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+        background: #fff;
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #343333;
+
+        h2{
+            font-size: 1.1rem;
+            line-height: 1.7rem;
+        }
+        p{
+            font-size: 0.9rem;
+            span{
+                font-weight: bold;
+            }
+        }
+
+        a{
+            text-decoration: none;
+            color: #343333;
+
+            i{
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+@media(max-width:640px){
+    .main-wrapper{
+        .container{
+            .left{
+                margin: 0px 0px 10px 0px !important;
+            }
+            .right{
+                margin: 00px 0px 0px 0px !important;
+            }
+        }
+    }
+}
